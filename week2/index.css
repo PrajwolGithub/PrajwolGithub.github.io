@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans';
+   
+}
+nav{
+    height:10vh;
+    width:100%;
+    background-image: url(4907157.jpg);
+
+}
+.logo{
+    font-size: 28px;
+    color:rgb(74, 77, 64);
+}
+span{
+    color:antiquewhite;
+}
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :20px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black ;
+    padding:40px 10px;
+    font-size:20px;
+}
+nav ul li{
+    color: aqua;
+}
+button{
+    background-color: burlywood;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    padding: 10px 10px;
+    font-weight: bold;
+
+
+}
+
+button:hover{
+    background-color: bisque;
+}

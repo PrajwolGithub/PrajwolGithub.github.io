@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  #main{
+      width: 100%;
+      height: 100vh;
+      background-image: url(/img/portfolio-background111.png);
+      background-size: cover;
+      background-position: center;
+  }
+  
+  nav{
+    background-color: rgb(4, 4, 4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      height: 120px;
+      left: 0;
+      width: 100%;
+  }
+   
+  nav ul li{
+    padding: 20px;
+    display: inline-block;
+    list-style: none;
+  }
+  
+  nav ul li a{
+      color:azure;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight:bolder;
+  
+  }
+  
+  nav .mylogo{
+    transition: transform 0.3s ease; 
+     width: 300px;
+     height: 100px;
+    
+  }
+  
+  .mylogo:hover{
+      transform: translateY(-10px);
+  }
+  
+  nav ul li a:hover{
+      border-radius: 10px;
+      background: aqua;
+      width: 100px;
+      height: 100px;
+      transition: 0.8s;
+      color: black;
+  }
+  
+  .hello{
+      padding-top: 300px;
+      padding-left: 150px;
+  }
+  
+  .a{
+      font-family: 'Courier New', Courier, monospace;
+      color: azure;
+      font-size: 70px;
+      font-weight: bold;
+  }
+  
+  .b{
+      margin-top: 50px;
+      font-family: 'Courier New', Courier, monospace;
+      color: azure;
+      font-size: 50px;
+      
+  }
+  
+  .a span{
+      color:aqua;
+  }
+
+
+  #Aboutme{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/portfolio-background.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+.container-aboutme{
+    display: flex;
+  }
+
+  .img{
+    animation: fadeIn 1s;
+    padding: 110px;
+    width: 50%;
+    height: 60vh;
+    border-radius: 16vh;
+  }
+  
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+.h1{
+    padding-top: 100px;
+    color:azure;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+
+.aboutme h2{
+  padding-top: 100px;
+  padding-bottom: 10px;
+  color:azure;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:bold;
+}
+.aboutme li{
+  padding: 9px;
+  color:azure;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+
+.aboutme p{
+  padding-top: 70px;
+  color:azure;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  line-height: 29px; 
+}
+
+h1 span{
+  color: aqua;
+}
+
+p span{
+  color: aqua;
+}
+
+h2 span{
+  color: aqua;
+}
+
+li span{
+  color: aqua;
+}
+ 
+
+
+#Education {  
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/portfolio-background.png);
+    background-size: cover;
+    background-position: center;
+}
+.title {
+    padding: 5px;
+    text-align: center;
+    color:azure;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Bagmati{ 
+  height:70vh;
+  align-items: center;
+  width: 33%;
+  
+}
+.Bagmati img{
+width: 300px;
+height: 300px;
+border-radius: 10px;
+}
+
+.Bagmati p{
+    padding: 10px;
+    color:azure;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Galaxy {
+    height:70vh;
+    align-items: center;
+    width: 33%;
+}
+  
+.Galaxy img{
+    width: 260px;
+    height: 300px;
+    border-radius: 10px;
+}
+  
+.Galaxy p{
+    padding: 10px;
+    color:azure;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  .Herald {
+    height:70vh;
+    align-items: center;
+    width: 33%;
+  }
+  
+  .Herald img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .Herald p {
+    padding: 10px;
+    color:azure;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+  .container-hobbies{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .h{
+    display: inline-block;
+    width: 30%;
+    margin: 30px;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  

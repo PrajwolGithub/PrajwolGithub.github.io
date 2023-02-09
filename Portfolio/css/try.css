@@ -167,26 +167,29 @@ li span{
     background-size: cover;
     background-position: center;
 }
-.title {
-    padding: 5px;
+.h1-education{
+    padding: 100px;
     text-align: center;
     color:azure;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:bold;
 }
-.container {
+.container-education {
   display: flex;
   justify-content: space-between;
 }
 
 .Bagmati{ 
-  height:70vh;
-  align-items: center;
-  width: 33%;
-  
+  display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height:55vh;
+    align-items: center;
+    width: 33%;
 }
 .Bagmati img{
+  padding-left: 70px;
 width: 300px;
 height: 300px;
 border-radius: 10px;
@@ -199,7 +202,10 @@ border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 .Galaxy {
-    height:70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height:55vh;
     align-items: center;
     width: 33%;
 }
@@ -207,7 +213,7 @@ border-radius: 10px;
 .Galaxy img{
     width: 260px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
   
 .Galaxy p{
@@ -218,15 +224,18 @@ border-radius: 10px;
 }
 
   .Herald {
-    height:70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height:55vh;
     align-items: center;
     width: 33%;
   }
   
   .Herald img {
+    padding-left: 70px;
     width: 300px;
     height: 300px;
-    border-radius: 10px;
   }
   .Herald p {
     padding: 10px;
@@ -235,7 +244,13 @@ border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
   }
 
-
+#Hobbies{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/portfolio-background.png);
+    background-size: cover;
+    background-position: center;
+}
   .container-hobbies{
     width: 80%;
     margin: 0 auto;

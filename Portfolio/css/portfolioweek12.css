@@ -66,7 +66,7 @@
       padding-left: 150px;
   }
   
-  .a{
+  .mainh1{
       font-family: 'Courier New', Courier, monospace;
       color: azure;
       font-size: 70px;
@@ -77,14 +77,44 @@
       margin-top: 50px;
       font-family: 'Courier New', Courier, monospace;
       color: azure;
-      font-size: 50px;
-      
+      font-size: 50px;   
   }
+  
+ @media screen and (max-width: 1024px)
+ {
+  .mainh1{
+    font-size: 50px;
+  }
+  .b{
+    font-size: 30px;
+  }
+  nav{
+    background-color: rgb(4, 4, 4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      height: 120px;
+      left: 0;
+      width: 100%;
+  }
+
+  nav ul li{
+    padding: 10px;
+  }
+
+  nav .mylogo{
+    transition: transform 0.3s ease; 
+     width: 200px;
+     height: 100px;
+  }
+ }
   
 
   #Aboutme{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(/img/portfolio-background.png);
     background-size: cover;
     background-position: center;
@@ -96,13 +126,26 @@
 
 .container-aboutme{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .img{
-    padding: 110px;
-    width: 50%;
+  .img-aboutme img{
+    width: 70%;
     height: 60vh;
-    border-radius: 16vh;
+    border-radius: 1vh;
+    overflow-x: hidden;
+    }
+
+  .img-aboutme{
+    flex-basis: 35%;
+    padding-top:100px;
+    padding-left: 80px;
+  }
+
+
+  .aboutme{
+    flex-basis: 60%;
   }
   
 .h1{
@@ -112,8 +155,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight:bold;
 }
-
-.aboutme h2{
+ .aboutmeh2{
   padding-top: 100px;
   padding-bottom: 10px;
   color:azure;
@@ -139,6 +181,27 @@
   line-height: 29px; 
 }
 
+@media screen and (max-width: 1024px)
+{
+.img-aboutme{
+    padding-top: 100px;
+    width: 100%;
+    height: 65vh;
+    border-radius: 10vh;
+}
+.aboutme p{
+  font-size: 15px;
+}
+.aboutmeh2{
+  padding-top: 30px;
+  font-size: 20px;
+}
+.aboutme li{
+  font-size: 15px;
+}
+}
+
+
 #Education {  
     width: 100%;
     height: 100vh;
@@ -148,8 +211,8 @@
 }
 
 .h1-education{
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     text-align: center;
     color:azure;
     font-size: 40px;
@@ -158,7 +221,7 @@
 }
 .container-education {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Bagmati{ 
@@ -168,6 +231,7 @@
     height:55vh;
     align-items: center;
     width: 33%;
+    overflow-wrap:break-word;
 }
 .Bagmati img{
   padding-left: 70px;
@@ -179,7 +243,7 @@
 .Bagmati p{
     padding: 10px;
     color:azure;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
 }
 .Galaxy {
@@ -200,7 +264,7 @@
 .Galaxy p{
     padding: 10px;
     color:azure;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -221,21 +285,60 @@
   .Herald p {
     padding: 10px;
     color:azure;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
   }
 
+@media screen and (max-width: 1024px)
+{
+  .Bagmati{
+    padding: 0;
+  }
+.Bagmati img{
+    width: 150px;
+    height: 150px;
+  }
+  .Bagmati p{
+    font-size: 15px;
+  }
+  .Galaxy{
+    padding: 0;
+  }
+.Galaxy img{
+    width: 150px;
+    height: 150px;
+  }
+  .Galaxy p{
+    font-size: 15px;
+  }
+  .Herald img{
+    width: 150px;
+    height: 150px;
+  }
+  .Herald p{
+    font-size: 15px;
+  }
+  .Herald{
+    padding: 0;
+  }
+.h1-education
+{
+  padding-top: 100px;
+  font-size: 20px;
+}
+}
+
 #Hobbies{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(/img/portfolio-background.png);
     background-size: cover;
     background-position: center;
 }
 
 .h1-hobbies{
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     color:azure;
     font-size: 40px;
@@ -265,16 +368,28 @@
     font-family: 'Courier New', Courier, monospace;
   }
 
+  @media screen and (max-width: 1024px) 
+  {
+    .h1-hobbies{
+      font-size: 25px;
+    } 
+    
+    .h{
+      font-size: 15px;
+    }
+
+  }
+
 #Contact{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-image: url(/img/portfolio-background.png);
   background-size: cover;
   background-position: center;
 }
 
 .h1-contact{
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 30px;
   text-align: center;
   color:azure;
@@ -339,4 +454,59 @@
 
 .fa-solid{
   color:aqua;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background: url(/img/footer.jpg);
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+
+.fa-github{
+  color: rgb(8, 8, 8);
+}
+
+.fa-linkedin{
+  color: rgb(8, 8, 8);
+}
+.fa-instagram{
+  color: rgb(8, 8, 8);
+}
+.fa-facebook{
+  color: rgb(8, 8, 8);
+}
+footer .social_icon{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li{
+  list-style: none;
+}
+
+footer .social_icon li a{
+  font-size: 2em;
+  color: black;
+  margin: 0 10px;
+}
+@media screen and (max-width: 1024px){
+  #Contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/portfolio-background.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
 }

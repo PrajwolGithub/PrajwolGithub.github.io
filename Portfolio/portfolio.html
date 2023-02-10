@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/try.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <script src="https://kit.fontawesome.com/913d943dfb.js" crossorigin="anonymous"></script>
 </head>
 <body>
         <!-- Home  -->
@@ -17,7 +18,7 @@
                 <li><a href="#Aboutme">About me</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#Hobbies">Hobbies</a></li>
-                <li><a href="#Contact">Contant</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
                 <img src="./img/logo6.png" class="mylogo">
         </nav>
@@ -30,6 +31,7 @@
         <!-- About -->
 
     <div id="Aboutme">
+        <h1 class="aboutmeh1">Aboutme</h1>
         <div class="container-aboutme">
             <img src="./img/aboutme.JPG" class="img">
             <div class="aboutme">
@@ -51,25 +53,25 @@
         <!-- Education -->
 
 <div id="Education">
-    <h1 class="h1-education">Education</h1>
+    <h1 class="h1-education"><span>Edu</span>cation</h1>
     <div class="container-education">
         <div class="Bagmati">
             <img src="./img/bagmati1.png" alt="Bagmati">
-            <p>Institue: Bagmati Boarding School</p>
-            <p>Year: 2014-2020</p>
-            <p>GPA: 3.30</p>
+            <p><span>Institue:</span>  Bagmati Boarding School</p>
+            <p><span>Year: </span> 2014-2020</p>
+            <p><span>GPA:</span> 3.30</p>
         </div>
         <div class="Galaxy">
             <img src="./img/Galaxy.jpg" alt="Galaxy">
-            <p>Institue: Galaxy Public School</p>
-            <p>Year: 2020-2022</p>
-            <p>GPA: 3.47</p>
+            <p> <span>Institue:</span> Galaxy Public School</p>
+            <p><span>Year:</span> 2020-2022</p>
+            <p><span> GPA: </span>3.47</p>
         </div>
         <div class="Herald">
             <img src="./img/footer-logo.svg" alt="Herald">
-            <p>Institue: Herald College Kathmandu</p>
-            <p>Year: 2022-Present</p>
-            <p>GPA: - </p>
+            <p><span> Institue:</span> Herald College Kathmandu</p>
+            <p><span> Year:</span> 2022-Present</p>
+            <p><span>GPA: </span> - </p>
         </div>
     </div>
 </div>
@@ -77,25 +79,62 @@
         <!-- Hobbies -->
         
 <div id="Hobbies">
-    <div class="container-hobbies">
-        <h1 class="h1-hobbies">My Hobbies</h1>
+    <h1 class="h1-hobbies"><span>My</span> Hobbies</h1>
+    <div class="container-hobbies1">
             <div class="h">
-                <h2>Singing</h2>
-                <p>I love to sing and participate in local competitions and events. Singing is a great way to express my emotions and relieve stress.</p>
+                <i class="fa-solid fa-music"></i>
+                <h2><span>Singing</span></h2>
+                <p>I love to sing with my friends and family. Singing is a great way to express my emotions and relieve stress.</p>
             </div>
             <div class="h">
-                <h2>Coding</h2>
+                <i class="fa-solid fa-code"></i>
+                <h2><span>Coding</span></h2>              
                 <p>I enjoy solving problems and building things from scratch. I like to code in multiple programming languages and work on personal projects in my free time.</p>
             </div>
+    </div>
+        <div class="container-hobbies1">
             <div class="h">
-                <h2>Travelling</h2>
+                <i class="fa-solid fa-suitcase-rolling"></i>
+                <h2><span>Travelling</span></h2>
                 <p>I love to explore new places and cultures. Travelling helps me broaden my perspective and gain a better understanding of the world.</p>
             </div>
             <div class="h">
-                <h2>Playing Video Games</h2>
-                <p>I like to unwind by playing video games. I enjoy playing a variety of games, from action games to strategy games, and competing with friends and family.</p>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2><span>Gaming</span></h2>
+                <p>I like to unwind by playing video games. I enjoy playing a variety of games, from action games to strategy games, and competing with friends.</p>
             </div>
+        </div>
+</div>
+
+<!-- contact-->
+<div id="Contact">
+    <h1 class="h1-contact"><span>C</span>ontact<span> me.</span> </h1>
+    <div class="container-contactme">
+        <form>
+            <div class="input">
+            <i class="fa-regular fa-circle-user fa-3x"></i>
+            <input type="text" placeholder="Name" class="box"><br>
+            </div>
+            <div class="input">
+            <i class="fa-regular fa-envelope fa-3x"></i>
+            <input type="email" placeholder="Email" class="box"><br>
+            </div>
+            <div class="input">
+            <i class="fa-solid fa-square-phone fa-3x"></i>
+            <input type="number" placeholder="Number" class="box"><br>
+            </div>
+            <div class="input">
+            <i class="fa-regular fa-message fa-3x"></i>
+            <input type="text" placeholder="Message" class="box">
+            </div>
+            <div class="button">
+                <a href="#">
+                  Send
+                </a>
+              </div>
+        </form>
     </div>
 </div>
+
 </body>
 </html>

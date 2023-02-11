@@ -13,15 +13,20 @@
 
     <div id="main">
         <nav>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#Aboutme">About me</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#Hobbies">Hobbies</a></li>
                 <li><a href="#Contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
                 <img src="./img/logo6.png" class="mylogo">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
             <div class="hello">
                 <h1 class="mainh1"><span>H</span>ello<br><span>W</span>orld!</h1>
                 <p class="b">This is my Portfolio<span>.</span></p>
@@ -31,13 +36,12 @@
         <!-- About -->
 
     <div id="Aboutme">
-
+        <h1 class="h1"><span>About</span> me</h1>
         <div class="container-aboutme">
             <div class="img-aboutme">
                 <img src="./img/aboutme.JPG">
             </div>
             <div class="aboutme">
-                <h1 class="h1"><span>About</span> me</h1>
                 <p><span>Hello,</span> I am <span>Prajwol Rai.</span> Presently staying in
                  Kathmandu and being originally from Khotang.
                 <span>Currently</span>  a first-year student at <span>Herald College Kathmandu.</span>
@@ -138,21 +142,38 @@
     </div>
 </div>
 
+<!--references-->
+
+<div id="references">
+    <div class="references-container">
+        <h1 class="references-h1">References</h1>
+        <p>This website was created by Prajwol, Rai</p><br>
+        <li><a href="https://fontawesome.com/"><i class="fa-solid fa-icons"></i></a>Icons</li><br>
+        <li><a href="https://free4kwallpapers.com/3d-abstract/portfolio-background-wallpaper--j0nP"><i class="fa-solid fa-images"></i></a>Background images</li>        
+    </div>
+</div>
+
 <!--Fotter-->
 <footer>
-    <div class="wave-animation">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-    </div>
     <ul class="social_icon">
-        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://github.com/PrajwolGithub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/prajwol-rai-09a60425a/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/prajwolrai__/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100013842962489"><i class="fa-brands fa-facebook"></i></a></li>
     </ul>
     <p>Prajwol | All Rights Reserved</p>
 </footer>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
 </body>
 </html>

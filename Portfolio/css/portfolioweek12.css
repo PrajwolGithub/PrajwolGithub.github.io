@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    
-   
   }
   span{
     color: aqua;
   }
-  
+
+  /*main*/
+
   #main{
       width: 100%;
       height: 100vh;
@@ -25,11 +25,12 @@
       top: 0;
       height: 120px;
       left: 0;
+      right: 0;
       width: 100%;
   }
    
   nav ul li{
-    padding: 20px;
+    padding-inline: 20px;
     display: inline-block;
     list-style: none;
   }
@@ -79,38 +80,120 @@
       color: azure;
       font-size: 50px;   
   }
-  
- @media screen and (max-width: 1024px)
- {
-  .mainh1{
-    font-size: 50px;
+  .fa-bars{
+    display: none;
   }
+
+  .fa-circle-xmark{
+    display: none;
+  }
+  
+  @media screen and (max-width: 1245px)
+  {
+    .mainh1{
+      font-size: 50px;
+    } 
+    .b{
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 1048px){
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+ @media screen and (max-width: 747px){
+  #main{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/portfolio-background11.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .hello{
+    padding: 0;
+  }
+  .mainh1{
+    padding-left: 40px;
+    padding-top: 300px;
+    font-size: 40px;
+  }
+
   .b{
-    font-size: 30px;
+    padding-left: 40px;
+    font-size: 15px;
+  }
+  .fa-circle-xmark{
+    display: block;
+    font-size: 25px;
+    color: rgb(83, 49, 49);
   }
   nav{
-    background-color: rgb(4, 4, 4);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      height: 120px;
-      left: 0;
-      width: 100%;
+    width: 100%;
   }
-
+  nav ul{
+    background:black;
+    position: fixed;
+    top: 0;
+    width: 200px;
+    right: 0;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 0.5s;
+  }
   nav ul li{
-    padding: 10px;
+    display: block;
+    color: rgb(253, 242, 242);
+    margin: 20px;
+  }
+  nav ul .fa-circle-xmark{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .fa-bars{
+    display: block;
+    color: aliceblue;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+}
+  @media screen and (max-width: 624px) 
+  {
+    #main{
+      width: 650px;
+      height: 900px;
+    }
+
+    .hello{
+      padding-left: 20px;
+    }
+    .mainh1{
+      font-size: 50px;
+    }
+    .b{
+      font-size: 20px;
+    }
+    nav ul{
+      height: 900px;
+    }
   }
 
-  nav .mylogo{
-    transition: transform 0.3s ease; 
-     width: 200px;
-     height: 100px;
+  @media screen and (max-width: 413px)
+  {
+    #main{
+      height: 1000px;
+    }
+    nav ul{
+      height: 950px;
+    }
   }
- }
-  
+
+/*About me*/
 
   #Aboutme{
     width: 100%;
@@ -131,7 +214,7 @@
   }
 
   .img-aboutme img{
-    width: 70%;
+    width: 60%;
     height: 60vh;
     border-radius: 1vh;
     overflow-x: hidden;
@@ -143,12 +226,12 @@
     padding-left: 80px;
   }
 
-
   .aboutme{
     flex-basis: 60%;
   }
   
 .h1{
+    text-align: center;
     padding-top: 100px;
     color:azure;
     font-size: 30px;
@@ -201,6 +284,55 @@
 }
 }
 
+@media screen and (max-width:870px){
+  .img-aboutme{
+    padding-left: 100px;
+    height: 1vh;  
+  }
+}
+@media screen and (max-width:743px){
+
+  .img-aboutme{
+    overflow: hidden;
+    margin-top: 200px;
+    padding: 20px;
+    width: 300px;
+    height: 60vh;
+  }
+  .img-aboutme img{
+    width: 100%;
+  } 
+}
+
+@media screen and (max-width:626px)
+{
+  #Aboutme{
+    width: 650px;
+    height: 120vh;
+  }
+  .container-aboutme{
+    flex-direction: column;
+  }
+  .img-aboutme{
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-aboutme img{
+    width: 100%;
+    height: 50vh;
+  }
+  .aboutme{
+    padding-left: 30px;
+  }
+  .aboutme p{
+    padding-top: 0;
+  }
+
+}
+
+/*education*/
 
 #Education {  
     width: 100%;
@@ -211,8 +343,8 @@
 }
 
 .h1-education{
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
     text-align: center;
     color:azure;
     font-size: 40px;
@@ -227,7 +359,6 @@
 .Bagmati{ 
     display: flex;
     flex-direction: column;
-    padding: 50px;
     height:55vh;
     align-items: center;
     width: 33%;
@@ -249,7 +380,6 @@
 .Galaxy {
     display: flex;
     flex-direction: column;
-    padding: 50px;
     height:55vh;
     align-items: center;
     width: 33%;
@@ -271,13 +401,13 @@
   .Herald {
     display: flex;
     flex-direction: column;
-    padding: 50px;
     height:55vh;
     align-items: center;
     width: 33%;
   }
   
   .Herald img {
+    margin-bottom: 125px;
     padding-left: 70px;
     width: 300px;
     height: 300px;
@@ -327,6 +457,57 @@
   font-size: 20px;
 }
 }
+@media screen and (max-width:743px)
+{
+  .Herald img{
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  .Bagmati img{
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width:626px)
+{
+  #Education{
+    width: 650px;
+  }
+}
+@media screen and (max-width:626px)
+{
+  .h1-education{
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .container-education{
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagmati, .Galaxy, .Herald{
+    width: 100%;
+    height: 55vh;
+  }
+  #Education{
+    height: 185vh;
+  }
+  .Bagmati img{
+    width: 50%;
+    height: 40vh;
+  }
+  .Galaxy img{
+    width: 50%;
+    height: 40vh;
+  }
+  .Herald img{
+    width: 50%;
+    height: 40vh;
+  }
+}
+
+
+
+/*hobbies*/
 
 #Hobbies{
     width: 100%;
@@ -379,6 +560,36 @@
     }
 
   }
+  @media screen and (max-width:743px)
+  {
+    .h{
+      font-size: 10px;
+    }
+    #Hobbies{
+      height: 90vh;
+    }
+  }
+  @media screen and (max-width:626px)
+{
+  #Hobbies{
+    width: 650px;
+  }
+}
+@media screen and (max-width:626px){
+  #Hobbies{
+    height: 160vh;
+  }
+  .container-hobbies1{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h{
+    font-size: 15px;
+  }
+
+}
+/*Contact*/
 
 #Contact{
   width: 100%;
@@ -455,6 +666,63 @@
 .fa-solid{
   color:aqua;
 }
+@media screen and (max-width: 1024px){
+  #Contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/portfolio-background.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width:626px)
+{
+  #Contact{
+    width: 650px;
+    height: 80vh
+
+  }
+}
+
+/*refrences*/
+
+#references{
+  width: 100%;
+  height: 28vh;
+  background-image: url(/img/references.png);
+  background-size: cover;
+  background-position: center;
+}
+.references-container{
+margin-left: 50px;
+color:azure;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+list-style-type: none;
+}
+.references-h1{
+color:azure;
+font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+font-weight:bold;
+padding: 20px;
+}
+@media screen and (max-width:743px)
+{
+ #references{
+    height: 35vh;
+  }
+}
+@media screen and (max-width:626px)
+{
+  #references{
+    width: 650px;
+    height: 30vh;
+  }
+}
+
+
+/*fotter*/
 
 footer{
   position: relative;
@@ -499,14 +767,14 @@ footer .social_icon li a{
   color: black;
   margin: 0 10px;
 }
-@media screen and (max-width: 1024px){
-  #Contact{
+@media screen and (max-width: 747px){
+  footer{
     width: 100%;
-    height: 100vh;
-    background-image: url(/img/portfolio-background.png);
-    background-size: cover;
-    background-position: center;
   }
-  
-  
+}
+@media screen and (max-width:626px)
+{
+  footer{
+    width: 650px;
+  }
 }

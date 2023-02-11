@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
   }
+  .menu{
+    display: none;
+  }
   span{
     color: aqua;
   }
@@ -80,14 +83,7 @@
       color: azure;
       font-size: 50px;   
   }
-  .fa-bars{
-    display: none;
-  }
-
-  .fa-circle-xmark{
-    display: none;
-  }
-  
+ 
   @media screen and (max-width: 1245px)
   {
     .mainh1{
@@ -96,6 +92,7 @@
     .b{
       font-size: 30px;
     }
+    
   }
   @media (max-width: 1048px){
 

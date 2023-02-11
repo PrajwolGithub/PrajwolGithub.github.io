@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   nav .menu{
     display: none;
   }
@@ -307,7 +307,7 @@
 {
   #Aboutme{
     width: 650px;
-    height: 120vh;
+    height: 130vh;
   }
   .container-aboutme{
     flex-direction: column;
@@ -573,7 +573,7 @@
 }
 @media screen and (max-width:626px){
   #Hobbies{
-    height: 135vh;
+    height: auto;
   }
   .container-hobbies1{
     width: 100%;
@@ -683,7 +683,7 @@
 @media screen and (max-width: 412px)
 {
   #Contact{
-    height: 70vh;
+    height: 100vh;
   }
 }
 
@@ -790,7 +790,6 @@ footer .social_icon li a{
 @media screen and (max-width: 413px)
 {
   footer{
-    background-image: url(/img/footerresposive.jpg);
-    height: 40vh;
+    height: 15vh;
   }
 }

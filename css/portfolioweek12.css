@@ -146,13 +146,13 @@
     color: rgb(253, 242, 242);
     margin: 20px;
   }
-  nav ul .fa-circle-xmark{
+  nav ul .menu{
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-  .fa-bars{
+  nav .menu{
     display: block;
     color: aliceblue;
     margin-right: 20px;
@@ -574,7 +574,7 @@
 }
 @media screen and (max-width:626px){
   #Hobbies{
-    height: 160vh;
+    height: 135vh;
   }
   .container-hobbies1{
     width: 100%;
@@ -681,6 +681,13 @@
   }
 }
 
+@media screen and (max-width: 412px)
+{
+  #Contact{
+    height: 70vh;
+  }
+}
+
 /*refrences*/
 
 #references{
@@ -714,6 +721,12 @@ padding: 20px;
 {
   #references{
     width: 650px;
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 413px)
+{
+  #references{
     height: 30vh;
   }
 }
@@ -773,5 +786,12 @@ footer .social_icon li a{
 {
   footer{
     width: 650px;
+  }
+}
+@media screen and (max-width: 413px)
+{
+  footer{
+    background-image: url(/img/footerresposive.jpg);
+    height: 40vh;
   }
 }
